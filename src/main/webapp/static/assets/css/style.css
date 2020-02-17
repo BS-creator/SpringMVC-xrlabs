@@ -1,0 +1,992 @@
+@font-face {
+  font-family: FrutigerLTPro;
+  src: url(../fonts/Frutiger\ LT\ Std\ 57\ Cn\ Bold.otf);
+}
+@font-face {
+  font-family: FrutigerLTPro-Roman;
+  src: url(../fonts/Frutiger\ LT\ Std\ 55\ Roman\ Regular.otf);
+}
+
+body{
+    background:#fff;
+    font-family: FrutigerLTPro;
+ 
+}
+.d-none{
+  display: none;
+}
+
+
+/* Login Page style */
+.login-background{
+    background:red;
+}
+.Clear-Desk-XR {
+   
+    font-family: FrutigerLTPro;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.72px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .admin-dashboard {
+    opacity: 0.51;
+    font-family: FrutigerLTPro;
+    font-size: 36px;
+    margin-top: 0;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.56px;
+    color: #000000;
+    margin-left: 5px;
+  }
+
+  .login-form-label {
+   
+    font-family: FrutigerLTPro;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    
+  }
+  .login-form-control{
+    width: 250px;
+    height: 50px;
+    object-fit: contain;
+    border: solid 2px #e5e5e5;
+    background-color: #ffffff;
+    margin-left: 15px;
+    border-radius:0px;
+    font-family: FrutigerLTPro;
+    box-shadow: none;
+  }
+  .form-item>div{
+    display: inline-block;
+  }
+  .form-label {
+    width: 170px;
+}
+
+.forget-password-link {
+  
+    opacity: 0.5;
+    font-family: FrutigerLTPro;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .forget-password-link:hover{
+      opacity:1;
+      text-decoration: none;
+      color:#000;
+  }
+  .login-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #000000;
+    background-color: #ffffff;
+    font-family: FrutigerLTPro;
+    font-size: 16px;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 0px;
+    margin-right: 22px;
+    margin-left: 150px;
+  }
+
+
+  .login-background{
+      background:url(../img/login/background.jpg);
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 13% 83%, 21% 19%, 0% 0%);
+clip-path: polygon(100% 0, 100% 100%, 0 100%, 13% 83%, 21% 19%, 0% 0%);
+      height: 100vh;
+      background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .title-card {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.form-placeholder {
+    margin-top: 85px;
+}
+.forget-password-sec-holder {
+    margin-top: 35px;
+}
+.col-sm-4.login-section {
+    margin-left: 50px;
+    margin-right: -50px;
+    margin-top: 50px;
+}
+img.img-responsive.img.logo-img {
+  height: 50px;
+  margin-top: 120px;
+}
+/* Session 2.1  */
+
+.black-bg{
+  background-color: #000000;
+  height: 100vh;
+}
+.sidebar_first_title{
+  font-family: FrutigerLTPro;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.sidebar_second_title {
+  opacity: 0.7;
+  font-family: FrutigerLTPro;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.28px;
+  color: #ffffff;
+  margin-top: 0;
+}
+.sidebar_menu {
+  margin-top: 50px;
+  /* margin-left: -15px; */
+  /* margin-right: -15px; */
+  width: 100%;
+}
+.sidebar_menu>ul {
+  list-style: none;
+}
+.sidebar_menu>ul>li {
+  /* background: blue; */
+     padding: 15px 0;
+    width: 100%;
+}
+.sidebar_menu>ul>li:hover {
+  background: #191919;
+ 
+}
+.sidebar_menu>ul>li>a{
+  opacity: 0.7;
+  font-family: FrutigerLTPro;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+.sidebar_menu>ul>li.active{
+ background:#191919;
+}
+.sidebar_icon {
+  color: #fceeee;
+  font-size: 14px;
+  margin-left: 100px;
+}
+.sidebar_logo {
+  height: 36px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.sidebar_footer {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+.sidebar_footer>.sidebar_menu {
+  margin-top: 50px;
+  /* margin-left: -25px;
+  margin-right: -68px; */
+}
+img.img.img-responsive.img-thumbnail.logout-logo {
+  background: none;
+  border: none;
+  width: 25px;
+}
+ol, ul {
+  padding: 0;
+}
+.col-sm-2.black-bg {
+  padding: 0;
+}
+.theme-btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 2px #000000;
+  background-color: #ffffff;
+  font-family: FrutigerLTPro;
+  font-size: 16px;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 0px;
+}
+.text-right{
+  text-align: right;
+}
+.download_btn{
+  margin-right: 100px;
+  /* padding-right: 35px; */
+
+}
+
+.top_title_section {
+  height: 60px;
+  margin-top: 73px;
+  /* text-align: center; */
+}
+.top_title_section .page_title{
+font-family: FrutigerLTPro;
+font-size: 32px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1;
+letter-spacing: 0.5px;
+color: #000000;
+text-align: left;
+margin-left: 120px;
+}
+.top_title_section .btn {
+  margin-top: 10px;
+  float: right;
+  margin-right: 100px;
+}
+input.form-control-search.form-control {
+  width: 98%;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 3px;
+  font-size: large;
+  margin-top: 30px;
+}
+
+input.form-control-search.form-control::-webkit-input-placeholder {
+  padding-left:20px;
+  font-family:Muli;
+  
+}
+.content-table {
+  width: 98%;
+  margin: 0 auto;
+  margin-right: 3px;
+  max-height: 500px;
+  margin-top: 30px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.content-table table thead tr th{
+  opacity: 0.5;
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.19px;
+  color: #000000;
+  text-align: left;
+  border: none;
+}
+
+img.img.img-thumbnail.avatar {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  margin-left: -5px;
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar_name{
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.19px;
+  color: #000000;
+}
+.content-table table tbody tr td h5{
+  opacity: 0.51;
+  font-family: FrutigerLTPro-Roman;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  color: #000000;
+}
+img.img.img-thumbnail.img-responsive.arrow_head {
+  background: none;
+  border: none;
+  height: 25px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+  border-top: none;
+}
+tbody{
+  margin-top: 20px;
+}
+
+/* session 2.2 */
+
+.card{
+  height: 100px;
+  /* background: red; */
+  /* position: relative; */
+  border:none;
+}
+.time_log,.session_id{
+  opacity: 0.5;
+  font-family: FrutigerLTPro-Roman;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  color: #000000;
+  margin-bottom: -5px;
+  margin-top: 0;
+}
+.table_value{
+  font-family: FrutigerLTPro;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.22px;
+  color: #000000;
+}
+.table_sub_content{
+  opacity: 0.5;
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  color: #000000;
+  margin-top: -5px;
+  text-transform: uppercase;
+}
+.table_content {
+  display: inline-block;
+  float: left;
+  margin-right: 40px;
+}
+.time_log{
+  float: right;
+}
+.time_log::after{
+  clear: both;
+}
+.theme-btn-2{
+  border: solid 2px #000000;
+  background-color: #ffffff;
+  font-family: FrutigerLTPro;
+  font-size: 16px;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 0px;
+}
+.viewall_btn {
+  margin-top: 15px;
+}
+
+.openclose{
+  transform: rotate(90deg);
+}
+.card-start{
+  /* border: 2px solid red; */
+  border-bottom: none;
+  box-shadow: 0px -2px 4px 0px #0005;
+}
+.card-start>td{
+  border-bottom:none;
+}
+.card-close {
+
+  /* background: red;
+  border: 2px solid red; */
+  border-top: none;
+  box-shadow: 1px 2px 4px 0px #00000055;
+
+}
+img.img.img-responsive.img-thumbnail.menu_img {
+  border: none;
+  background: none;
+  height: 20px;
+  margin-right: 12px;
+}
+a.delete_btn.btn {
+  color: #000;
+  border-radius: 0;
+}
+
+
+/* Swal reconfigure */
+.swal-button--danger {
+  background-color: #ffffff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0;
+}
+.swal-button--danger:not([disabled]):hover {
+  background-color: #fff;
+}
+.swal-button--cancel {
+  color: #555;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+.swal-button--cancel:not([disabled]):hover {
+  background-color: #fff;
+  border: none !important;
+}
+.swal-overlay--show-modal .swal-modal {
+  border-radius: 0;
+}
+
+.swal-title:not(:last-child) {
+  margin-bottom: 13px;
+  font-family: FrutigerLTPro;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: #000000;
+  margin-left: 12px;
+}
+.swal-text {
+  font-family: FrutigerLTPro-Roman;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+
+/* filter */
+
+.filter_holder{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: absolute;
+    z-index: 99999999999999;
+    opacity: unset;
+    right: 65px;
+    margin-top: 30px;
+    width: 200px;
+    padding: 20px;
+    padding-top: 5px;
+    overflow-x: hidden;
+}
+button.btn.dropdown-toggle.delete-toggle.menu_img {
+  padding: 0;
+  background: none;
+  border: none;
+  float: left;
+}
+.filter_title {
+  font-family: FrutigerLTPro;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.19px;
+  color: #000000;
+  opacity: unset;
+}
+.filter_sub_title {
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.14px;
+  color: #000000;
+}
+.option_holder{
+  font-family: FrutigerLTPro-Roman;
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.11px;
+  color: #000000;
+}
+.option_holder>input {
+  height: 8px;
+}
+.option_holder>input[type="date"] {
+    height: 15px;
+    border: none;
+    margin-left: 25px;
+}
+
+
+/* trainee page */
+img.img.img-thumbnail.img-responsive.arrow_head_only {
+  background: none;
+  border: none;
+  height: 25px;
+}
+
+.dropdown_title{
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  color: #000000;
+}
+.dropdown_menu_item{
+  font-family: FrutigerLTPro-Roman;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #000000;
+}
+
+
+/* model overriding */
+.modal-content {
+  border-radius: 0;
+  margin-top: 180px;
+}
+.model_title{
+  font-family: FrutigerLTPro;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.model_content_holder .login-form-label {
+  font-family: FrutigerLTPro;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+input.btn.theme-btn.modelbtn {
+  margin-top: 23px;
+  padding: 14px 50px;
+}
+.model_content_holder {
+  margin-left: 50px;
+}
+
+/* traineee detail page */
+img.img.img-thumbnail.img-responsive.back_btn {
+  border: none;
+  background: none;
+  height: 30px;
+  margin-top: 20px;
+    position: absolute;
+    left: 20px;
+}
+img.img.img-thumbnail.top_avatar {
+  height: 75px;
+  width: 75px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+}
+.top_avatar_name{
+    font-family: FrutigerLTPro;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-align: left;
+    margin-left: -75px;
+    text-transform: capitalize;
+}
+.top_title_info{
+  opacity: 0.5;
+  font-family: FrutigerLTPro-Roman;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.19px;
+  color: #000000;
+  display: inline;
+  margin-right: 25px;
+}
+.top_title_info_holder {
+  margin-left: -75px;
+}
+/* .detail_download_btn {
+  float: right;
+  margin-right: 115px;
+} */
+
+
+/* Stat holder */
+
+.stat_holder {
+  display: inline-block;
+  margin-right: 25px;
+}
+.stat_holder_holder {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.stat_val{
+  font-family: FrutigerLTPro;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.37px;
+  color: #000000;
+}
+.stat_title{
+  opacity: 0.5;
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.19px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.page_title_session{
+  font-family: FrutigerLTPro;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.37px;
+  color: #000000;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.delete_btn_session{
+  left: 86% !important;
+}
+.visibleonmob{
+  display:none;
+}
+img.img.img-thumbnail.img-responsive.download_icon_img {
+  border: none;
+  background: none;
+  width: 18%;
+}
+img.img.img-thumbnail.img-responsive.filter_image {
+  border: none;
+  background: none;
+  /* width: 40%; */
+  margin-left: -7px;
+}
+
+
+
+.card-toggle{cursor: pointer;}
+
+.dropdown:hover .dropdown-menu {display: block;     text-align: center
+  ;}
+
+  ul.add_record.dropdown-menu {
+    margin-right: 100px;
+    text-align: left !important;
+}
+
+
+
+button.light-button.filter-button {
+  background: none;
+  border: none;
+  padding: 2px;
+  font-family: FrutigerLTPro-Roman;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  color: #000000;
+  text-transform: capitalize;
+  font-size: 10px;
+}
+
+input[type=checkbox]{
+  display:none;
+}
+
+.right-content,.left-content {
+  padding: 10px;
+}
+tr{
+  transition: all 5s ;
+}
+span.invalid-feedback {
+    color: red;
+}
+a.dropdown_title.non_hover:hover {
+  background: none;
+  cursor: default;
+}
+.alert.alert-dismissible.alert-own.alert-warning.show {
+  color: #000;
+  background: #ffff;
+  border-color: #000;
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.nohover:hover{
+  text-decoration: none !important;
+}
+
+.head-content.row div {
+  display: inline-block;
+}
+.avatar-holder {
+  width: 10%;
+  padding-left: 5%;
+  float: left;
+}
+.name-holder,.title1 {
+  width: 30%;
+}
+.emp-id-holder,.title2 {
+  width: 10%;
+}
+.date-holder,.title3 {
+  width: 20%;
+}
+.type-holder,.title4 {
+  width: 15%;
+}
+.menu-img-holder,.title5{
+  width: 5%;
+}
+
+.emp-id-holder h5, .date-holder h5, .type-holder h5 {
+  opacity: 0.51;
+  font-family: FrutigerLTPro-Roman;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  color: #000000;
+}
+
+.panel-default>.panel-heading {
+  color: #333;
+  /* background-color: #f5f5f5; */
+  background: transparent ;
+  border: none !important;
+  border-bottom: #f5f5f5;
+}
+
+.session-id-holder {
+  margin-left: 50px;
+}
+.time-log-holder {
+  margin-right: 50px;
+}
+.content-holder div {
+  display: inline-block;
+  margin: 0px 18px;
+}
+.content-holder{
+  margin-left: 30px;
+  float: left;
+}
+.view-all-btn-holder {
+  /* width: 10%; */
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+
+.card-effect.panel.panel-default {
+  box-shadow: 0px 0px 9px #0006;
+  border: 1px solid #0006;
+}
+
+.panel-default {
+  border-color: #ddd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px !important;
+}
+.dropdown-menu.d-none {
+  display: none ;
+}
+button.btn.dropdown-toggle.delete-toggle.menu_img_holder {
+  background: none;
+}
+.dropdown.dropup.dropright.float-right.menu-img-holder {
+  visibility: hidden;
+}
+.visible{
+  visibility: visible !important;
+}
+.bg-red{
+  background: red !important;
+}
+.content-menu-btn{
+  background: none;
+}
+.black-red{
+  background: red;
+}
+h5.title {
+  opacity: 0.5;
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.19px;
+  color: #000000;
+  text-align: left;
+  border: none;
+}
+.content-table-title>div {
+  display: inline-block;
+ 
+}
+
+.title1 {
+  margin-left: 100px;
+}
+.filter_holder.d-none{
+  display: none !important;
+}
+
+.alert-custom {
+  min-height: 50px;
+  z-index: 99999999999999;
+  position: fixed;
+  opacity:0;
+  width: 100%;
+  text-align: center;
+  transition: all 2s ease;
+  animation: 2s popUpEntrada;
+}
+.alert-custom h1 {
+  font-family: FrutigerLTPro;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.19px;
+  color: #fff;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-transform: capitalize;
+}
+.alert-custom.success{
+  background:#44B444;
+}
+.alert-custom.error{
+  background:rgba(233, 76, 84, 0.877);
+  
+}
+
+@keyframes popUpEntrada {
+  0%{opacity: 0; margin-top: -20%;}
+  75%{margin-top: 0%;}
+  100%{opacity: 1;}
+}
+
+a{
+  text-decoration: none !important;
+}
+input.date-picker {
+  width: 69%;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.calender-icon {
+  float: left;
+}
+.calender-icon img {
+  height: 20px;
+  /* float: left; */
+}

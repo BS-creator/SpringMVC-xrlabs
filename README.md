@@ -1,2 +1,7 @@
-# SpringMVC-xrlabs-
-SpringMVC+MSSQL+Tomcat: It's a project that from indian client. He want me to convert laravel project to java project with the same functionalities. Also want to deploy on IIS server with jetty.
+# HelloWeb
+Spring4.3.1+SpringMVC+Hibernate4+MsSQL
+
+#environment setup
+https://www.tutorialspoint.com/springmvc/springmvc_environment_setup.htm
+
+
