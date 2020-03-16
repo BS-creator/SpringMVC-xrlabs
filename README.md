@@ -1,4 +1,4 @@
-# HelloWeb
+# Convert Laravel project into SpringMVC
 Spring4.3.1+SpringMVC+Hibernate4+MsSQL
 
 #environment setup
