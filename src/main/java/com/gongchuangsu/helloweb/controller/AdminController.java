@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.gongchuangsu.helloweb.service.IEmailService;
 import com.gongchuangsu.helloweb.service.ISessionService;
-// import com.gongchuangsu.helloweb.service.IUserService;
+import com.gongchuangsu.helloweb.service.IUserService;
 
 @Controller
 public class AdminController {
@@ -86,10 +86,10 @@ public class AdminController {
 	@CrossOrigin
 	@RequestMapping(value = "/handle_resetpassword", method = RequestMethod.POST)
 	public String handle_resetpassword(HttpServletRequest request, HttpServletResponse response) {
-		String email=request.getParameter("email");
+		String email = request.getParameter("email");
 		String password = userService.getPasswordByEmail(email);
 		System.out.println(password);
 		emailService.sendMail(email);
-		return "redirect:/login?password="+password+"";
+		return "redirect:/login?password=" + password + "";
 	}
 }
