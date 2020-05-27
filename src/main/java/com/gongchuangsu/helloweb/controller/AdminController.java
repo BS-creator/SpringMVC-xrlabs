@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.gongchuangsu.helloweb.service.IEmailService;
 import com.gongchuangsu.helloweb.service.ISessionService;
-import com.gongchuangsu.helloweb.service.IUserService;
+// import com.gongchuangsu.helloweb.service.IUserService;
 
 @Controller
 public class AdminController {
@@ -31,7 +31,7 @@ public class AdminController {
 
 	@Autowired
 	private IEmailService emailService;
-	
+
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String admin(Model model) {
 
@@ -39,7 +39,7 @@ public class AdminController {
 		model.addAttribute("users", users);
 		return "admin";
 	}
-	
+
 	@RequestMapping(value = "/api/get_all_users", method = RequestMethod.GET)
 	public String get_all_users(Model model) {
 
@@ -47,7 +47,7 @@ public class AdminController {
 		model.addAttribute("users", users);
 		return "admin";
 	}
-	
+
 	@RequestMapping(value = "/add_admin", method = RequestMethod.GET)
 	public String add_admin(Model model) {
 		model.addAttribute("user", new User());
@@ -64,14 +64,14 @@ public class AdminController {
 	@RequestMapping(value = "/delete_admin/{id}", method = RequestMethod.GET)
 	public String delete_admin(@PathVariable int id, Model model) {
 		userService.deleteUserById(id);
-		return "redirect:/admin";  
+		return "redirect:/admin";
 	}
-	
+
 	@CrossOrigin
 	@RequestMapping(value = "/editsave", method = { RequestMethod.POST, RequestMethod.PUT })
 	public String edit_save(@ModelAttribute("user") User user) {
 		userService.updateUser(user);
-		return "redirect:/admin";    
+		return "redirect:/admin";
 	}
 
 	@CrossOrigin
@@ -80,9 +80,9 @@ public class AdminController {
 		user.setAdmin_position("ROLE_admin");
 		user.setEnabled(1);
 		userService.addUser(user);
-		return "redirect:/admin";    
+		return "redirect:/admin";
 	}
-	
+
 	@CrossOrigin
 	@RequestMapping(value = "/handle_resetpassword", method = RequestMethod.POST)
 	public String handle_resetpassword(HttpServletRequest request, HttpServletResponse response) {
@@ -90,6 +90,6 @@ public class AdminController {
 		String password = userService.getPasswordByEmail(email);
 		System.out.println(password);
 		emailService.sendMail(email);
-		return "redirect:/login?password="+password+"";    
+		return "redirect:/login?password="+password+"";
 	}
 }
