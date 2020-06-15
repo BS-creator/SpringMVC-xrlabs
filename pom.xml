@@ -14,7 +14,7 @@
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<hibernate-envers.version>${hibernate.version}</hibernate-envers.version>
 		<mysql-connector-java.version>5.1.39</mysql-connector-java.version>
-		<hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
+		<hibernate-validator.version>5.3.5.Final</hibernate-validator.version>
 	</properties>
 	<dependencies>
 		<dependency>
