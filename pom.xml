@@ -13,7 +13,7 @@
 		<org.springframework.security.version>4.2.0.RELEASE</org.springframework.security.version>
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<hibernate-envers.version>${hibernate.version}</hibernate-envers.version>
-		<mysql-connector-java.version>5.1.39</mysql-connector-java.version>
+		<mysql-connector-java.version>8.0.16</mysql-connector-java.version>
 		<hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
 	</properties>
 	<dependencies>
