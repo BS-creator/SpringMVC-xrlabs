@@ -9,7 +9,7 @@
 	<name>HelloWeb Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring.version>4.2.5.RELEASE</spring.version>
+		<spring.version>5.2.22.RELEASE</spring.version>
 		<org.springframework.security.version>4.2.0.RELEASE</org.springframework.security.version>
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<hibernate-envers.version>${hibernate.version}</hibernate-envers.version>
